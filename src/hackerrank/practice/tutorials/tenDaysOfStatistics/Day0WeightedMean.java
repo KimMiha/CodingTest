@@ -1,9 +1,9 @@
-package hackerrank.practice.tutorials.tenDaysOfStatistics.day0WeightedMean;
+package hackerrank.practice.tutorials.tenDaysOfStatistics;
 
 import java.util.Scanner;
 
 // https://www.hackerrank.com/challenges/s10-weighted-mean/problem
-public class Solution {
+public class Day0WeightedMean {
 
   public static void main(String[] args) {
 
