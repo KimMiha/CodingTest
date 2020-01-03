@@ -1,6 +1,6 @@
 package leetCode.easy;
 
-public class no771JewelsAndStones {
+public class No771JewelsAndStones {
 
   public int numJewelsInStones(String J, String S) {
     char[] jewels = J.toCharArray();
