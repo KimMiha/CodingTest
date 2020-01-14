@@ -10,8 +10,8 @@ public class No344ReverseString {
   }
 
   public static void main(String[] args) {
-    char nums1[] = {'h', 'e', 'l', 'l', 'o'};
-    reverseString(nums1);
+    char input[] = {'h', 'e', 'l', 'l', 'o'};
+    reverseString(input);
   }
 }
 /* Result Details
