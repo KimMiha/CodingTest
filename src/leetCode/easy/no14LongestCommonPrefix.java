@@ -3,20 +3,20 @@ package leetCode.easy;
 public class no14LongestCommonPrefix {
   public static String longestCommonPrefix(String[] strs) {
     String result = "";
-    if(strs.length < 1  ){
+    if (strs.length < 1) {
       return result;
     }
 
     String shortest = strs[0];
-    for (int i = 1 ; i < strs.length ; i++){
+    for (int i = 1; i < strs.length; i++) {
       shortest = shortest.length() > strs[i].length() ? strs[i] : shortest;
     }
 
     char[] shortestCharArray = shortest.toCharArray();
-    for(int c = 0 ; c < shortestCharArray.length ; c++){
-      for(int i = 0 ; i < strs.length; i++){
+    for (int c = 0; c < shortestCharArray.length; c++) {
+      for (int i = 0; i < strs.length; i++) {
         char[] chartoarray = strs[i].toCharArray();
-        if(chartoarray[c] != shortestCharArray[c]) {
+        if (chartoarray[c] != shortestCharArray[c]) {
           return result;
         }
       }
@@ -27,7 +27,7 @@ public class no14LongestCommonPrefix {
   }
 
   public static void main(String[] args) {
-    String[] input1 = {"flower","flow","flight"};
+    String[] input1 = {"flower", "flow", "flight"};
     System.out.println(longestCommonPrefix(input1));
 
     String[] input2 = {};
@@ -36,7 +36,11 @@ public class no14LongestCommonPrefix {
     String[] input3 = {"a"};
     System.out.println(longestCommonPrefix(input3));
 
-    String[] input4 = {"aa","a"};
+    String[] input4 = {"aa", "a"};
     System.out.println(longestCommonPrefix(input4));
   }
 }
+/* Result Details
+Runtime: 12 ms, faster than 6.80% of Java online submissions for Longest Common Prefix.
+Memory Usage: 41.7 MB, less than 5.26% of Java online submissions for Longest Common Prefix.
+ */
